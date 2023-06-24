@@ -1,0 +1,28 @@
+To create and store the UpdateEmployeeSalary stored procedure in MySQL,
+
+Create a Database name"Technobrain"
+
+you can execute the following SQL query using a MySQL database management tool. For 
+this cases I used MYSQL PhpMyAdmin
+
+DELIMITER //
+
+CREATE PROCEDURE UpdateEmployeeSalary (
+    IN empID INT,
+    IN newSalary INT,
+    OUT oldSalary INT
+)
+BEGIN
+    -- Store the old salary value
+    SELECT salary INTO oldSalary FROM employees WHERE id = empID;
+
+    -- Update the salary of the employee
+    UPDATE employees SET salary = newSalary WHERE id = empID;
+
+    -- Return the old salary value
+    SELECT oldSalary;
+END //
+
+DELIMITER ;
+
+

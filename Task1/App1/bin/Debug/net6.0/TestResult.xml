@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" name="App1.dll" fullname="C:/Users/Dishonates/source/repos/App1/App1/bin/Debug/net6.0/App1.dll" testcasecount="1" result="Failed" start-time="2023-06-23T21:24:18.6524863Z" end-time="2023-06-23T21:27:21.2639604Z" duration="182.611358" total="1" passed="0" failed="1" inconclusive="0" skipped="0" warnings="0" asserts="0" random-seed="528281032">
+  <command-line><![CDATA[C:\Users\Dishonates\source\repos\App1\App1\bin\Debug\net6.0\App1.dll]]></command-line>
+  <filter />
+  <test-suite type="Assembly" id="1002" name="App1.dll" fullname="C:/Users/Dishonates/source/repos/App1/App1/bin/Debug/net6.0/App1.dll" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2023-06-23T21:24:18.6524863Z" end-time="2023-06-23T21:27:21.2639604Z" duration="182.611358" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+    <environment framework-version="3.13.3.0" clr-version="6.0.18" os-version="Microsoft Windows 10.0.19045" platform="Win32NT" cwd="C:\Users\Dishonates\source\repos\App1\App1\bin\Debug\net6.0" machine-name="DESKTOP-728UV15" user="Dishonates" user-domain="DESKTOP-728UV15" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="WorkDirectory" value="C:\Users\Dishonates\source\repos\App1\App1\bin\Debug\net6.0" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="13512" />
+      <property name="_APPDOMAIN" value="App1" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1003" name="App1" fullname="App1" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2023-06-23T21:24:18.6668308Z" end-time="2023-06-23T21:27:21.2639144Z" duration="182.597083" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1000" name="EmployeeDALTests" fullname="App1.EmployeeDALTests" classname="App1.EmployeeDALTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2023-06-23T21:24:18.6720212Z" end-time="2023-06-23T21:27:21.2632297Z" duration="182.591206" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1001" name="TestUpdateEmployeeSalary" fullname="App1.EmployeeDALTests.TestUpdateEmployeeSalary" methodname="TestUpdateEmployeeSalary" classname="App1.EmployeeDALTests" runstate="Runnable" seed="597156719" result="Failed" label="Error" start-time="2023-06-23T21:24:18.6855511Z" end-time="2023-06-23T21:27:21.2571646Z" duration="182.571804" asserts="0">
+          <failure>
+            <message><![CDATA[System.InvalidCastException : Object cannot be cast from DBNull to other types.]]></message>
+            <stack-trace><![CDATA[   at System.DBNull.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ToInt32(Object value)
+   at App1.EmployeeDAL.UpdateEmployeeSalary(Int32 empID, Int32 newSalary, Int32& oldSalary) in C:\Users\Dishonates\source\repos\App1\App1\EmployeeDAL.cs:line 32
+   at App1.EmployeeDALTests.TestUpdateEmployeeSalary() in C:\Users\Dishonates\source\repos\App1\App1\EmployeeDALTests.cs:line 53]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
